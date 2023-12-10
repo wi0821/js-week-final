@@ -1,4 +1,3 @@
-// 帶入自己的網址路徑
 const api_path = "wi0821";
 const token = "3EnBdzZQGnVhYpFgDb9Hapr42ia2";
 
@@ -209,7 +208,8 @@ function createOrder() {
     ).
     then(function (response) {
     console.log(response.data);
-        })
+    deleteAllCartList();
+    })
     .catch(function(error){
         console.log(error.response.data);
     })
